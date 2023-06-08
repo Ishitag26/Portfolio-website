@@ -138,12 +138,14 @@
     <h1 class="heading">get <span>in touch</span></h1>
     <div class="col-container">
       <div class="col">
-        <h2>get in touch</h2>
-        <input type="text" placeholder="your name" />
-        <input type="email" placeholder="your email" />
-        <input type="text" placeholder="your phone" />
-        <textarea name="" placeholder="write a message" id="" cols="30" rows="10"></textarea>
-        <a href="#" class="btn">send message</a>
+        <h2>Get in touch</h2>
+        <form action="contact.php" method="POST">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Your email" required>
+          <input type="text" name="phone" placeholder="Your phone">
+          <textarea name="message" placeholder="Write a message" cols="30" rows="10" required></textarea>
+          <button type="submit" class="btn">Send message</button>
+        </form>
       </div>
   
       <div class="col">
