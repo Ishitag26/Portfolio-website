@@ -39,3 +39,12 @@ document.onload = () => {
     document.querySelector('.header').classList.remove('active');
   }
 };
+
+  const form = document.querySelector("form");
+  const confirmationMessage = document.querySelector("#confirmation-message");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    confirmationMessage.style.display = "block";
+    form.reset();
+  });
